@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário de Matrícula</title>
+</head>
+<body>
+
+<h1>Formulário de Matrícula - FATEC</h1>
+
+<form>
+
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+
+        <label>Nome completo:</label><br>
+        <input type="text" name="nome" required minlength="5"><br><br>
+
+        <label>Email:</label><br>
+        <input type="email" name="email" required><br><br>
+
+        <label>Data de nascimento:</label><br>
+        <input type="date" name="data"><br><br>
+
+        <label>CPF:</label><br>
+        <input type="text" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" 
+        placeholder="000.000.000-00" required><br><br>
+
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>Dados Acadêmicos</legend>
+
+        <label>Curso:</label><br>
+        <select name="curso">
+            <option>ADS</option>
+            <option>COMEX</option>
+            <option>Gestão Empresarial</option>
+        </select><br><br>
+
+        <label>Período:</label><br>
+        <input type="radio" name="periodo" value="manha"> Manhã<br>
+        <input type="radio" name="periodo" value="noite"> Noite<br><br>
+
+        <label>
+            <input type="checkbox" name="experiencia"> Já programou antes?
+        </label><br><br>
+
+    </fieldset>
+
+    <br>
+
+    <label>Observações:</label><br>
+    <textarea name="obs" rows="4" cols="40"></textarea><br><br>
+
+    <label>Upload de foto:</label><br>
+    <input type="file" name="foto"><br><br>
+
+    <label>Cor favorita:</label><br>
+    <input type="color" name="cor"><br><br>
+
+    <button type="submit">Enviar</button>
+
+</form>
+
+</body>
+</html>
