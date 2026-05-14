@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cards de Produtos</title>
+    <style>
+        .container { display: flex; gap: 15px; flex-wrap: wrap; margin-top: 20px; }
+        .card { border: 1px solid #ccc; padding: 15px; border-radius: 8px; width: 150px; }
+        .escondido { display: none; }
+        .controles { margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+
+    <div class="controles">
+        <button id="btnFiltrar">Mostrar só eletrônicos</button>
+        <button id="btnLimpar">Limpar</button>
+    </div>
+
+    <div id="container" class="container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
